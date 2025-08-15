@@ -1,0 +1,2 @@
+await Voting.getVoteCount("0x886771C88bcb0c69179bF43c7f7d61D14ed5FaaD");
+const Voting = await ethers.getContractAt("Voting", "0x471e3Df48Fd7d6D7F2F21b782FbE822c9BE33f1D");

@@ -1,0 +1,209 @@
+/* frontend/src/App.css */
+.app-container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f8d7da); /* White to light red gradient */
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    padding: 20px;
+    background-color: #c00; /* Merah */
+    color: #fff; /* Putih */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .flag {
+    width: 80px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .flag:hover {
+    transform: scale(1.1);
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .wallet-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .connect-button,
+  .disconnect-button {
+    background-color: #fff;
+    color: #c00;
+    padding: 12px 24px;
+    border: 2px solid #c00;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .connect-button:hover,
+  .disconnect-button:hover {
+    background-color: #c00;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .account {
+    font-size: 1.1em;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0;
+  }
+  
+  .vote-count {
+    font-size: 1.1em;
+    color: #c00;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .error {
+    color: #c00;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .candidates-section {
+    margin: 20px 0;
+  }
+  
+  h2 {
+    color: #c00;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .candidates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .candidate-card {
+    background-color: #fff;
+    border: 2px solid #c00;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .candidate-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .candidate-card h3 {
+    margin: 0 0 10px;
+    color: #c00;
+    font-size: 1.4em;
+  }
+  
+  .candidate-card p {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .vote-button {
+    background-color: #c00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+  }
+  
+  .vote-button:hover {
+    background-color: #a00;
+    transform: scale(1.05);
+  }
+  
+  .vote-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+  
+  .voted {
+    color: #333;
+    font-style: italic;
+  }
+  
+  .winner-section {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #c00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .winner-text {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .app-container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    .flag {
+      width: 60px;
+    }
+  
+    .connect-button,
+    .disconnect-button,
+    .vote-button {
+      padding: 10px 16px;
+      font-size: 0.9em;
+    }
+  
+    .wallet-info {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .candidates-grid {
+      grid-template-columns: 1fr;
+    }
+  }
